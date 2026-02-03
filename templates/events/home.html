@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block title %}TAMASHA | Events{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-copy">
+            <div class="pill">Event Management System</div>
+            <h1>Discover a world of celebration</h1>
+            <p class="lead">
+                Browse and register for events based on your preferences. Organizers manage events,
+                registrations, payments, virtual links, and feedback—beautifully.
+            </p>
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#events">Browse Events</a>
+                <a class="btn btn-ghost" href="#features">See Features</a>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">Hybrid</div>
+                    <div class="stat-label">Physical + Virtual</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">M-Pesa</div>
+                    <div class="stat-label">Payments Tracking</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">Ratings</div>
+                    <div class="stat-label">Post-event Reviews</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-card">
+            <div class="glow"></div>
+            <div class="hero-media">
+                <div class="media-badge">Tonight</div>
+                <div class="media-title">TAMASHA LIVE</div>
+                <div class="media-sub">Tickets • Virtual link • Reminders</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="features">
+    <div class="container">
+        <h2 class="section-title">Why join TAMASHA</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-title">Eventful Moments</div>
+                <div class="card-text">Modern event pages with banners, schedules, and quick registration.</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Smart Payments</div>
+                <div class="card-text">Track M-Pesa transactions, confirm payments, and generate tickets/receipts.</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Virtual Access</div>
+                <div class="card-text">Manage online links and track virtual attendance for hybrid participation.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="events">
+    <div class="container">
+        <div class="section-head">
+            <h2 class="section-title">Featured Events</h2>
+            <div class="section-sub">Sample UI. Next we’ll connect this to the database.</div>
+        </div>
+
+        <div class="event-grid">
+            <article class="event-card">
+                <div class="event-banner banner-1"></div>
+                <div class="event-body">
+                    <div class="event-title">Neon Night Festival</div>
+                    <div class="event-meta">Nairobi • Fri 7:00 PM • Hybrid</div>
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-sm" type="button">Register</button>
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="event-banner banner-2"></div>
+                <div class="event-body">
+                    <div class="event-title">Tech & Talks Summit</div>
+                    <div class="event-meta">Virtual • Sat 10:00 AM • Online</div>
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-sm" type="button">Register</button>
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <div class="event-banner banner-3"></div>
+                <div class="event-body">
+                    <div class="event-title">After-Party Experience</div>
+                    <div class="event-meta">Mombasa • Sun 9:00 PM • Physical</div>
+                    <div class="event-actions">
+                        <button class="btn btn-primary btn-sm" type="button">Register</button>
+                        <button class="btn btn-ghost btn-sm" type="button">Details</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+{% endblock %}

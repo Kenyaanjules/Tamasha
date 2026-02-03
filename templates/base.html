@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}TAMASHA{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">TAMASHA</a>
+            <nav class="nav">
+                <a href="/">Home</a>
+                <a href="#features">Features</a>
+                <a href="#events">Events</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a class="btn btn-ghost" href="/admin/">Admin</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container footer-inner">
+            <div>
+                <div class="footer-title">TAMASHA</div>
+                <div class="footer-sub">Hybrid event management: on-site + virtual access</div>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Features</a>
+                <a href="#events">Events</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
