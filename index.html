@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAMASHA | Event Management System</title>
+  <link rel="stylesheet" href="static/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">TAMASHA</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#run">Run Locally</a>
+        <a href="#repo">Repo</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="./admin/" onclick="return false;">Django Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" id="about">
+          <div class="pill">Project 1 • Event Management System</div>
+          <h1>TAMASHA</h1>
+          <p class="lead">
+            A streamlined hybrid event management system: browse & register for events, track M-Pesa payments,
+            manage virtual access links, and collect feedback/ratings.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#features">See Features</a>
+            <a class="btn btn-ghost" href="#run">Run Django Locally</a>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">Hybrid</div>
+              <div class="stat-label">Physical + Virtual</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">M-Pesa</div>
+              <div class="stat-label">Payments Tracking</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Dashboards</div>
+              <div class="stat-label">Admin • Organizer • User</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="glow"></div>
+          <div class="hero-media">
+            <div class="media-badge">GitHub Pages</div>
+            <div class="media-title">Project Landing</div>
+            <div class="media-sub">The full app runs on Django (local/hosted)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-title">Admin / Organizer Dashboard</div>
+            <div class="card-text">
+              Add/edit/delete events, upload banners, track registrations, manage cancellations, and confirm payments.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Payments (M-Pesa)</div>
+            <div class="card-text">
+              Store transaction references, amounts, statuses, and generate receipts/tickets.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Virtual Events</div>
+            <div class="card-text">
+              Manage online links and track virtual attendance for hybrid participation.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">User Dashboard</div>
+            <div class="card-text">
+              Registered events card layout, payment history, reminders/notifications, virtual links, and level points.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Feedback & Ratings</div>
+            <div class="card-text">
+              Collect post-event reviews and ratings to improve future events.
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">Modern UI</div>
+            <div class="card-text">
+              Dark/purple event theme with responsive layout (CSS/JS) and Django templates.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="run">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Run the Django App Locally</h2>
+          <div class="section-sub">GitHub Pages is static; Django needs a server.</div>
+        </div>
+
+        <div class="card" style="margin-top: 12px;">
+          <div class="card-title">Commands (Windows PowerShell)</div>
+          <div class="card-text" style="margin-top: 10px; line-height: 1.8;">
+            1) Create/activate venv (already created in this repo): <code>.\.venv\Scripts\Activate.ps1</code><br />
+            2) Install deps: <code>python -m pip install -r requirements.txt</code> (optional if already installed)<br />
+            3) Migrate: <code>python manage.py migrate</code><br />
+            4) Create admin: <code>python manage.py createsuperuser</code><br />
+            5) Run: <code>python manage.py runserver</code><br />
+            Then open: <code>http://127.0.0.1:8000/</code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="repo">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Repository</h2>
+          <div class="section-sub">Source code on GitHub</div>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/Kenyaanjules/Tamasha" target="_blank" rel="noreferrer">Open GitHub Repo</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-title">TAMASHA</div>
+        <div class="footer-sub">Event Management System • Django + CSS + JS</div>
+      </div>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#run">Run Locally</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
